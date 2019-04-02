@@ -1,0 +1,60 @@
+{
+  "name": "modern-javascript-template",
+  "version": "1.0.0",
+  "description": "An overly simplified modern JavaScript environment template.",
+  "main": "index.js",
+  "babel": {
+    "presets": [
+      "@babel/preset-env"
+    ],
+    "plugins": [
+      [
+        "@babel/plugin-proposal-class-properties",
+        {
+          "loose": true
+        }
+      ],
+      [
+        "@babel/plugin-transform-runtime",
+        {
+          "regenerator": true
+        }
+      ]
+    ]
+  },
+  "scripts": {
+    "start": "webpack && webpack-dev-server --open"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AminuSufi585/modern-javascript-template.git"
+  },
+  "keywords": [
+    "modern",
+    "javascript",
+    "es6+"
+  ],
+  "author": "aminukano",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/AminuSufi585/modern-javascript-template/issues"
+  },
+  "homepage": "https://github.com/AminuSufi585/modern-javascript-template#readme",
+  "dependencies": {
+    "@babel/runtime": "^7.1.5",
+    "dotenv-webpack": "^1.7.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.1.5",
+    "@babel/plugin-proposal-class-properties": "^7.1.0",
+    "@babel/plugin-transform-runtime": "^7.1.0",
+    "@babel/preset-env": "^7.1.5",
+    "babel-loader": "^8.0.4",
+    "css-loader": "^1.0.1",
+    "html-webpack-plugin": "^3.2.0",
+    "style-loader": "^0.23.1",
+    "webpack": "^4.25.1",
+    "webpack-cli": "^3.1.2",
+    "webpack-dev-server": "^3.1.10"
+  }
+}
